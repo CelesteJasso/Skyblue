@@ -1,0 +1,191 @@
+[
+    {
+        "compra_renta": "Venta",
+        "tipo": "Departamentos en Preventa en V\u00eda Cuatro Seis, Monterrey, Nuevo Le\u00f3n",
+        "precio": "$1,980,000",
+        "superficie": "50-90 m\u00b2",
+        "municipio": "Guadalupe, Miguel Alem\u00e1n 4450, Guadalupe, Nuevo Le\u00f3n, M\u00e9xico."
+    },
+    {
+        "compra_renta": "Venta",
+        "tipo": "Departamentos en Venta en ARIA en Monterrey, Nuevo Le\u00f3n",
+        "precio": "$1,887,420",
+        "superficie": "38-92 m\u00b2",
+        "municipio": "Centro, Calzada Madero, Esq. con Emilio Carranza, Centro, 64000 Monterrey, N.L"
+    },
+    {
+        "compra_renta": "Venta",
+        "tipo": "Casas en Venta en Rinc\u00f3n de Foret en Saltillo, Coahuila",
+        "precio": "$2,409,799",
+        "superficie": "203-256 m\u00b2",
+        "municipio": "Eulalio Guti\u00e9rrez Trevi\u00f1o, Bosques de Chin\u00f3n 114, Rinc\u00f3n de Foret, 25085 Saltillo, Coah."
+    },
+    {
+        "compra_renta": "Venta",
+        "tipo": "Casas en Venta en Residencial Las Misiones, Saltillo, Coahuila",
+        "precio": "$3,280,000",
+        "superficie": "210-230 m\u00b2",
+        "municipio": "Sin Nombre de Col 18, Blvd. La Misi\u00f3n S/N, Sin Nombre de Col 18, 25070 Saltillo, Coahuila"
+    },
+    {
+        "compra_renta": "Venta",
+        "tipo": "Casa en venta en Valle de Chipinque, San Pedro Garza Garc\u00eda",
+        "precio": "$31,500,000",
+        "superficie": "438 m\u00b2",
+        "municipio": "Valle de Chipinque"
+    },
+    {
+        "compra_renta": "Venta",
+        "tipo": "Casa en Venta Escobedo Centro",
+        "precio": "$1,000,000",
+        "superficie": "90 m\u00b2",
+        "municipio": "Cabecera Municipal"
+    },
+    {
+        "compra_renta": "Venta",
+        "tipo": "CASA EN VENTA EN MONTERREY CARRETERA NACIONAL LA JOYA PRIVADA RESIDENCIAL",
+        "precio": "$14,300,000",
+        "superficie": "468 m\u00b2",
+        "municipio": "La Joya Privada Residencial"
+    },
+    {
+        "compra_renta": "Venta",
+        "tipo": "AL VENTA DE CASA EN CENTRO DE SANTA CATARINA",
+        "precio": "$13,500,000",
+        "superficie": "1105 m\u00b2",
+        "municipio": "Mirador de Santa Catarina"
+    },
+    {
+        "compra_renta": "Venta",
+        "tipo": "AL VENTA DE CASA EN VISTA HERMOSA",
+        "precio": "$5,500,000",
+        "superficie": "277 m\u00b2",
+        "municipio": "Vista Hermosa"
+    },
+    {
+        "compra_renta": "Venta",
+        "tipo": "AL PREVENTA DE CASA NUEVA EN FERRARA RESINDECIAL",
+        "precio": "$2,850,000",
+        "superficie": "122 m\u00b2",
+        "municipio": "N.L."
+    },
+    {
+        "compra_renta": "Venta",
+        "tipo": "GS PREVENTA DE CASA EN DOMINIO CUMBRES",
+        "precio": "$2,123,000",
+        "superficie": "112 m\u00b2",
+        "municipio": "N.L."
+    },
+    {
+        "compra_renta": "Venta",
+        "tipo": "VL CASA EN PREVENTA EN ALAMO SUR EN SANTIAGO",
+        "precio": "$4,500,000",
+        "superficie": "230 m\u00b2",
+        "municipio": "Santiago"
+    },
+    {
+        "compra_renta": "Venta",
+        "tipo": "LFG VENTA DE CASA EN PRIVADA LAS VILLAS JAZMIN",
+        "precio": "$555,000",
+        "superficie": "98 m\u00b2",
+        "municipio": "Privadas de las Villas"
+    },
+    {
+        "compra_renta": "Venta",
+        "tipo": "YG VENTA DE DEPARTAMENTO NUEVO EN CENTRO DE MTY",
+        "precio": "$3,920,000",
+        "superficie": "74 m\u00b2",
+        "municipio": "Centro"
+    },
+    {
+        "compra_renta": "Venta",
+        "tipo": "YG VENTA DE DEPARTAMENTO NUEVO EN CENTRO DE MTY",
+        "precio": "$2,533,000",
+        "superficie": "74 m\u00b2",
+        "municipio": "Centro"
+    },
+    {
+        "compra_renta": "Venta",
+        "tipo": "YG VENTA DE DEPARTAMENTO EN VALLE PONIENTE",
+        "precio": "$4,445,000",
+        "superficie": "81 m\u00b2",
+        "municipio": "Santa Catarina"
+    },
+    {
+        "compra_renta": "Venta",
+        "tipo": "VL VENTA DE CASA EN COLONIA EQUINOCCIO EN SANTIAGO",
+        "precio": "$8,300,000",
+        "superficie": "410 m\u00b2",
+        "municipio": "Condado de Asturias"
+    },
+    {
+        "compra_renta": "Venta",
+        "tipo": "YG VENTA DE DEPARTAMENTO EN VALLE PONIENTE",
+        "precio": "$4,800,000",
+        "superficie": "91 m\u00b2",
+        "municipio": "Santa Catarina"
+    },
+    {
+        "compra_renta": "Venta",
+        "tipo": "RA PREVENTA DE DEPARTAMENTO EN ALTAVISTA MTY",
+        "precio": "$4,550,000",
+        "superficie": "93 m\u00b2",
+        "municipio": "Nueva Espa\u00f1a"
+    },
+    {
+        "compra_renta": "Venta",
+        "tipo": "DH PREVENTA DE DEPARTAMENTOS CENTRO DE MONTERREY",
+        "precio": "$3,205,217",
+        "superficie": "64 m\u00b2",
+        "municipio": "Centro"
+    },
+    {
+        "compra_renta": "Venta",
+        "tipo": "DH PREVENTA DE DEPARTAMENTOS EN EL CENTRO DE MTY",
+        "precio": "$2,887,955",
+        "superficie": "55 m\u00b2",
+        "municipio": "Centro"
+    },
+    {
+        "compra_renta": "Venta",
+        "tipo": "RA PREVENTA DE DEPARTAMENTOS EN CENTRO MONTERREY",
+        "precio": "$3,421,463",
+        "superficie": "70 m\u00b2",
+        "municipio": "Centro"
+    },
+    {
+        "compra_renta": "Venta",
+        "tipo": "RA PREVENTA DE DEPARTAMENTO EN CENTRO MTY",
+        "precio": "$3,638,364",
+        "superficie": "80 m\u00b2",
+        "municipio": "Centro"
+    },
+    {
+        "compra_renta": "Venta",
+        "tipo": "DH PREVENTA DE DEPARTAMENTO EN CENTRO DE MTY",
+        "precio": "$4,951,980",
+        "superficie": "100 m\u00b2",
+        "municipio": "Centro"
+    },
+    {
+        "compra_renta": "Venta",
+        "tipo": "YG PREVENTA DE DEPARTAMENTO EN VALLE ORIENTE",
+        "precio": "$7,610,000",
+        "superficie": "56 m\u00b2",
+        "municipio": "Valle Oriente"
+    },
+    {
+        "compra_renta": "Venta",
+        "tipo": "LZ VENTA DE CASA EN RENACIMIENTO ESCOBEDO",
+        "precio": "$1,500,000",
+        "superficie": "90 m\u00b2",
+        "municipio": "Renacimiento 2do Sector"
+    },
+    {
+        "compra_renta": "Venta",
+        "tipo": "YG DEPARTAMENTO NUEVO EN SAQQARA",
+        "precio": "$12,090,000",
+        "superficie": "88 m\u00b2",
+        "municipio": "Jardines del Campestre"
+    }
+]
