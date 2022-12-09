@@ -30,7 +30,7 @@ function App() {
 
     let dataAllProperty = posts.filter(e => e.sitio == 'AllProperty')
     let dataVivanuncios = posts.filter(e => e.sitio == 'Vivanuncios')
-    let dataFlat = posts.filter(e => e.sitio == 'Flat')
+    let dataLamudi = posts.filter(e => e.sitio == 'Lamudi')
     let dataREMAX = posts.filter(e => e.sitio == 'REMAX')
 
     return (
