@@ -61,7 +61,7 @@ async def root():
     with open('Rentasvivanuncios.csv', 'w', newline='', encoding='utf-8') as f:
         writer = csv.writer(f)
         writer.writerow(['compra_renta', 'tipo', 'precio',
-                        'superficie', 'municipio'])
+                        'superficie', 'municipio', 'recamaras', 'banios', 'publicado', 'sitio'])
         writer.writerows(registros)
     return registros
 
@@ -94,5 +94,18 @@ def extraer_datos(tarjeta):
         municipio = tarjeta.find('div', {'class': 'tile-location'}).text
     except:
         municipio = ''
-    resultados = (compra_renta, tipo, precio, superficie, municipio)
+    try:
+        recamaras = tarjeta.find('div', {'class': 'tile-location'}).text
+    except:
+        recamaras = ''
+    try:
+        banios = tarjeta.find('div', {'class': 'tile-location'}).text
+    except:
+        banios = ''
+    try:
+        publicado = tarjeta.find('div', {'class': 'tile-location'}).text
+    except:
+        publicado = ''
+    resultados = (compra_renta, tipo, precio, superficie,
+                  municipio, recamaras, banios, publicado)
     return resultados
