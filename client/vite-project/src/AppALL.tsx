@@ -361,75 +361,75 @@ function App() {
         </Grid.Col>
 
         <Grid.Col span={3}>
-        <Center>
-                <Table captionSide="top" horizontalSpacing="xl" striped highlightOnHover>
-                    <ScrollArea style={{ height: 250 }} scrollbarSize={15}>
-                        <thead>
-                            <tr>
-                                <th scope="col">Compra / Renta</th>
-                                <th scope="col">descripcion</th>
-                                <th scope="col">precio</th>
-                                <th scope="col">recamaras</th>
-                                <th scope="col">baños</th>
-                                <th scope="col">ubicacion</th>
-                                <th scope="col">sitio</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            {
+          <Center>
+            <Table captionSide="top" horizontalSpacing="xl" striped highlightOnHover>
+              <ScrollArea style={{ height: 250 }} scrollbarSize={15}>
+                <thead>
+                  <tr>
+                    <th scope="col">Compra / Renta</th>
+                    <th scope="col">descripcion</th>
+                    <th scope="col">precio</th>
+                    <th scope="col">recamaras</th>
+                    <th scope="col">baños</th>
+                    <th scope="col">ubicacion</th>
+                    <th scope="col">sitio</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {
 
-                                dataLamudi.map((d) => (
-                                    <tr key={d.compra_renta}>
-                                        <td align="left">{d.compra_renta}</td>
-                                        <td align="left" >{d.tipo}</td>
-                                        <td align="left" >{d.precio}</td>
-                                        <td align="left" >{d.recamaras}</td>
-                                        <td align="left" >{d.banios}</td>
-                                        <td align="left" >{d.municipio}</td>
-                                        <td align="left" >{d.sitio}</td>
-                                    </tr>
-                                ))}
-                        </tbody>
-                    </ScrollArea>
-                </Table>
+                    dataLamudi.map((d) => (
+                      <tr key={d.compra_renta}>
+                        <td align="left">{d.compra_renta}</td>
+                        <td align="left" >{d.tipo}</td>
+                        <td align="left" >{d.precio}</td>
+                        <td align="left" >{d.recamaras}</td>
+                        <td align="left" >{d.banios}</td>
+                        <td align="left" >{d.municipio}</td>
+                        <td align="left" >{d.sitio}</td>
+                      </tr>
+                    ))}
+                </tbody>
+              </ScrollArea>
+            </Table>
 
-            </Center>
+          </Center>
         </Grid.Col>
 
         <Grid.Col span={3}>
-        <Center>
-                <Table captionSide="top" horizontalSpacing="xl" striped highlightOnHover>
-                    <ScrollArea style={{ height: 250 }} scrollbarSize={15}>
-                        <thead>
-                            <tr>
-                                <th scope="col">Compra / Renta</th>
-                                <th scope="col">descripcion</th>
-                                <th scope="col">precio</th>
-                                <th scope="col">recamaras</th>
-                                <th scope="col">baños</th>
-                                <th scope="col">ubicacion</th>
-                                <th scope="col">sitio</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            {
+          <Center>
+            <Table captionSide="top" horizontalSpacing="xl" striped highlightOnHover>
+              <ScrollArea style={{ height: 250 }} scrollbarSize={15}>
+                <thead>
+                  <tr>
+                    <th scope="col">Compra / Renta</th>
+                    <th scope="col">descripcion</th>
+                    <th scope="col">precio</th>
+                    <th scope="col">recamaras</th>
+                    <th scope="col">baños</th>
+                    <th scope="col">ubicacion</th>
+                    <th scope="col">sitio</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {
 
-                                dataFlat.map((d) => (
-                                    <tr key={d.compra_renta}>
-                                        <td align="left">{d.compra_renta}</td>
-                                        <td align="left" >{d.tipo}</td>
-                                        <td align="left" >{d.precio}</td>
-                                        <td align="left" >{d.recamaras}</td>
-                                        <td align="left" >{d.banios}</td>
-                                        <td align="left" >{d.municipio}</td>
-                                        <td align="left" >{d.sitio}</td>
-                                    </tr>
-                                ))}
-                        </tbody>
-                    </ScrollArea>
-                </Table>
+                    dataFlat.map((d) => (
+                      <tr key={d.compra_renta}>
+                        <td align="left">{d.compra_renta}</td>
+                        <td align="left" >{d.tipo}</td>
+                        <td align="left" >{d.precio}</td>
+                        <td align="left" >{d.recamaras}</td>
+                        <td align="left" >{d.banios}</td>
+                        <td align="left" >{d.municipio}</td>
+                        <td align="left" >{d.sitio}</td>
+                      </tr>
+                    ))}
+                </tbody>
+              </ScrollArea>
+            </Table>
 
-            </Center>
+          </Center>
         </Grid.Col>
       </Grid>
     </div>

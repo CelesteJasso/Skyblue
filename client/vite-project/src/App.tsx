@@ -1,6 +1,5 @@
-import { Table, Grid, Space, Button, Title, TextInput, ScrollArea, Center } from '@mantine/core';
-import React, { useState, useEffect } from 'react';
-import Ima from './components/allp.png'
+import { Table, Grid, Title, ScrollArea, Center, Header, Paper } from '@mantine/core';
+import { useState, useEffect } from 'react';
 import zim from './components/zimonterrey.jpg'
 import zip from './components/zipesqueria.jpg'
 import zis from './components/zisanpedro.jpg'
@@ -15,6 +14,7 @@ import ppt from './components/publicacionesportiempo.png'
 import { Image } from '@mantine/core';
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
+import { Heade } from './components/Hdr';
 
 // Este viene de la appi en @app.get("/getJSON/")
 // async def getJSON():
@@ -87,20 +87,9 @@ function App() {
     <div>
       <div>
         <br />
-        <Center>
-          <Image
-            width={500}
-            height={100}
-            src={Ima} />
-        </Center>
+        <Heade></Heade>
       </div>
       <br />
-      <div>
-        <h3> Apartado de mejora de experiencia para el usuario </h3>
-        <h6> Considero que es un plus saber que opciones de propiedades tengo en distintas zonas pues a veces se puede tener un rango de
-          precios un poco mas flexible si me acerca a la zona en la que quiero vivir.
-        </h6>
-      </div>
       <Grid>
         <Grid.Col span={1}>
           <br />
@@ -108,7 +97,9 @@ function App() {
         <Grid.Col span={5}>
           <div>
             <Title order={1}>Zona Industrial</Title>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d460347.9776983164!2d-100.84060681830245!3d25.655757411671814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1szonas%20industriales!5e0!3m2!1ses-419!2smx!4v1670457425029!5m2!1ses-419!2smx" width="200" height="200"></iframe>
+            <Paper shadow="xl" radius="lg" p="md" component="a" href="https://mantine.dev/core/">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d460347.9776983164!2d-100.84060681830245!3d25.655757411671814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1szonas%20industriales!5e0!3m2!1ses-419!2smx!4v1670457425029!5m2!1ses-419!2smx" width="390" height="300"></iframe>
+            </Paper>
           </div>
         </Grid.Col>
         <Grid.Col span={5}>
@@ -361,75 +352,75 @@ function App() {
         </Grid.Col>
 
         <Grid.Col span={3}>
-        <Center>
-                <Table captionSide="top" horizontalSpacing="xl" striped highlightOnHover>
-                    <ScrollArea style={{ height: 250 }} scrollbarSize={15}>
-                        <thead>
-                            <tr>
-                                <th scope="col">Compra / Renta</th>
-                                <th scope="col">descripcion</th>
-                                <th scope="col">precio</th>
-                                <th scope="col">recamaras</th>
-                                <th scope="col">baños</th>
-                                <th scope="col">ubicacion</th>
-                                <th scope="col">sitio</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            {
+          <Center>
+            <Table captionSide="top" horizontalSpacing="xl" striped highlightOnHover>
+              <ScrollArea style={{ height: 250 }} scrollbarSize={15}>
+                <thead>
+                  <tr>
+                    <th scope="col">Compra / Renta</th>
+                    <th scope="col">descripcion</th>
+                    <th scope="col">precio</th>
+                    <th scope="col">recamaras</th>
+                    <th scope="col">baños</th>
+                    <th scope="col">ubicacion</th>
+                    <th scope="col">sitio</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {
 
-                                dataLamudi.map((d) => (
-                                    <tr key={d.compra_renta}>
-                                        <td align="left">{d.compra_renta}</td>
-                                        <td align="left" >{d.tipo}</td>
-                                        <td align="left" >{d.precio}</td>
-                                        <td align="left" >{d.recamaras}</td>
-                                        <td align="left" >{d.banios}</td>
-                                        <td align="left" >{d.municipio}</td>
-                                        <td align="left" >{d.sitio}</td>
-                                    </tr>
-                                ))}
-                        </tbody>
-                    </ScrollArea>
-                </Table>
+                    dataLamudi.map((d) => (
+                      <tr key={d.compra_renta}>
+                        <td align="left">{d.compra_renta}</td>
+                        <td align="left" >{d.tipo}</td>
+                        <td align="left" >{d.precio}</td>
+                        <td align="left" >{d.recamaras}</td>
+                        <td align="left" >{d.banios}</td>
+                        <td align="left" >{d.municipio}</td>
+                        <td align="left" >{d.sitio}</td>
+                      </tr>
+                    ))}
+                </tbody>
+              </ScrollArea>
+            </Table>
 
-            </Center>
+          </Center>
         </Grid.Col>
 
         <Grid.Col span={3}>
-        <Center>
-                <Table captionSide="top" horizontalSpacing="xl" striped highlightOnHover>
-                    <ScrollArea style={{ height: 250 }} scrollbarSize={15}>
-                        <thead>
-                            <tr>
-                                <th scope="col">Compra / Renta</th>
-                                <th scope="col">descripcion</th>
-                                <th scope="col">precio</th>
-                                <th scope="col">recamaras</th>
-                                <th scope="col">baños</th>
-                                <th scope="col">ubicacion</th>
-                                <th scope="col">sitio</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            {
+          <Center>
+            <Table captionSide="top" horizontalSpacing="xl" striped highlightOnHover>
+              <ScrollArea style={{ height: 250 }} scrollbarSize={15}>
+                <thead>
+                  <tr>
+                    <th scope="col">Compra / Renta</th>
+                    <th scope="col">descripcion</th>
+                    <th scope="col">precio</th>
+                    <th scope="col">recamaras</th>
+                    <th scope="col">baños</th>
+                    <th scope="col">ubicacion</th>
+                    <th scope="col">sitio</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {
 
-                                dataFlat.map((d) => (
-                                    <tr key={d.compra_renta}>
-                                        <td align="left">{d.compra_renta}</td>
-                                        <td align="left" >{d.tipo}</td>
-                                        <td align="left" >{d.precio}</td>
-                                        <td align="left" >{d.recamaras}</td>
-                                        <td align="left" >{d.banios}</td>
-                                        <td align="left" >{d.municipio}</td>
-                                        <td align="left" >{d.sitio}</td>
-                                    </tr>
-                                ))}
-                        </tbody>
-                    </ScrollArea>
-                </Table>
+                    dataFlat.map((d) => (
+                      <tr key={d.compra_renta}>
+                        <td align="left">{d.compra_renta}</td>
+                        <td align="left" >{d.tipo}</td>
+                        <td align="left" >{d.precio}</td>
+                        <td align="left" >{d.recamaras}</td>
+                        <td align="left" >{d.banios}</td>
+                        <td align="left" >{d.municipio}</td>
+                        <td align="left" >{d.sitio}</td>
+                      </tr>
+                    ))}
+                </tbody>
+              </ScrollArea>
+            </Table>
 
-            </Center>
+          </Center>
         </Grid.Col>
       </Grid>
     </div>
