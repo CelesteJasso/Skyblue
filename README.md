@@ -7,6 +7,8 @@ Considero que es un plus a una pagina saber que opciones de propiedades tengo en
 
 Claramente estas razones podrian crecer pero por lo menos en mi experiencia, donde me ha tocado mudarme en 6 estados de la republica me hubiera sido muy util tener una pagina que me muestre las tres zonas del estado por la cual tomar la decision y que me da la facilidad de buscar que opciones tengo para vivir en dicha zona.
 
+Como dato extra, pienso que al agregar estas zonas no solo se ganan mas usuarios, tambien se consigue mayor numero de visitas a la pagina y puede ser un distintivo que la destaque.
+
 Mi experiencia como usuario.
 La mayor parte de mis amigos son de otros estados, algunos profesionistas, otros no y como parte de este proyecto les pregunte por que tomaron la decision de vivir en el minucipio que eligieron y tambien fue una o las tres razones de las zonas que elegi, mencionaban que tenian en mente un rango de precios, pero que sin duda estaban dispuestos a cambiarlo si los acercaba a Zona Industrial, Zona Turistica o Zona Metropolitana, al final todos queremos vivir en un lugar por la Ubicacion.
 
