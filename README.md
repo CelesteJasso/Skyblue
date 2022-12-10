@@ -1,3 +1,6 @@
+*** Under construction ***
+
+
 # Funcionalidad.
 He creado una aplicación web utilizando Vite, React y TypeScript en el frontend. También he creado un entorno virtual con uvicorn y FastAPI para ejecutar el servidor. Realicé Web Scraping con Selenium y configuré una API para extraer los datos del Web Scraping y correrla en el lado del servidor. Además, cree una libreta de Jupyter para analizar el Web Scraping realizado en sitios como AllProperty, Flat y Lamundi. Los datos extraídos del Web Scraping fueron utilizados para crear gráficas que permiten visualizar el analisis de estos datos.
 
