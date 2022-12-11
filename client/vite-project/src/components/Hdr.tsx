@@ -1,26 +1,33 @@
-import { Header, Image, Grid, Paper } from "@mantine/core";
-import ap from './all.png'
+import { Header, Image, Grid, Paper, Group, Navbar, Center, Title } from "@mantine/core";
+import ap from './logo.png'
+import { createStyles } from "@mantine/core";
 
+const useStyles = createStyles(theme => ({
+    sticky: {
+        position: 'fixed',
+        top: 0,
+        width: 100,
+    },
+    img: {
+        width: 300,
+        height: 100,
+        radius: 'lg',
+    },
+}))
 
 export function Heade() {
+    const { classes } = useStyles();
     return (
         <>
             <div>
-                <Header height={100}>
-                    <Image
-                        width={433}
-                        height={90}
-                        src={ap} />
-                </Header>
+                <Navbar className={classes.sticky} height={50}>
+                    <img className={classes.img} src={ap} />
+                    <Group position="right" spacing="xs">
+                        <a href="#User"><Title order={6} color='teal.3'> Data </Title> </a>
+                        <a href="#User"><Title order={6} color='pink'> User </Title> </a>
+                    </Group>
+                </Navbar>
             </div>
-            <Grid>
-                <Grid.Col span={6}>
-                    <a href="#usuario">Apartado de mejora de experiencia para el usuario</a>
-                </Grid.Col>
-                <Grid.Col span={6}>
-                    <a href="#DA">Apartado de Analisis de Datos para All Property</a>
-                </Grid.Col>
-            </Grid>
         </>
     )
 }
