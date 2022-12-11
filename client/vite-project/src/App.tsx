@@ -84,6 +84,14 @@ function App() {
         <Heade></Heade>
       </div>
       <br />
+      <Title order={6}>
+        *Se hizo Web Scraping.
+        *Se hiciero filtros.
+        *Se importaron Mapas con Google Maps para facilidad del usuario de ver las Zonas.
+        *Se hizo una libreta de Jupyter.
+        *Se hizo graficas.
+        *Se hizo pagina web con Python, React, jxs, Estilos con Mantine.
+      </Title>
       <Grid>
         <Grid.Col span={5}>
           <Indutrial></Indutrial>
@@ -348,6 +356,14 @@ function App() {
           </Table>
         </Center>
       </Group>
+      <Title order={6}>
+        *Se hizo Web Scraping.
+        *Se hiciero filtros.
+        *Se importaron Mapas con Google Maps para facilidad del usuario de ver las Zonas.
+        *Se hizo una libreta de Jupyter.
+        *Se hizo graficas.
+        *Se hizo pagina web con Python, React, jxs, Estilos con Mantine.
+      </Title>
     </div>
 
   );
