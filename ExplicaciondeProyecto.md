@@ -32,6 +32,14 @@ Esta es una grafica en la que pretendo mostrar que tanto
 la eligen los usuarios en coomparacion con otras paginas,
 con la variable de tiempo.
 
+# Que se hizo
+        *Se hizo Web Scraping.
+        *Se hiciero filtros.
+        *Se importaron Mapas con Google Maps para facilidad del usuario de ver las Zonas.
+        *Se hizo una libreta de Jupyter.
+        *Se hizo graficas.
+        *Se hizo pagina web con Python, React, jxs, Estilos con Mantine.
+        *Se logro el proyecto en 4 dias.
 
 ## Razon personal
 Para mi este proyecto es muy importante ya que es el resultado del recuento de mis aprendizajes de este año y aun que claramente me hubiera gustado tener mas tiempo para hacer mas cambios y mas graficas especificas incluso mejorar la parte visual, estoy feliz con el entorno que aprendi a crear para este proyecto y para futuros proyectos en los cuales ire implementando nuevos aprendizajes.
