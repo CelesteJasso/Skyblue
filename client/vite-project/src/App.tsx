@@ -363,6 +363,7 @@ function App() {
         *Se hizo una libreta de Jupyter.
         *Se hizo graficas.
         *Se hizo pagina web con Python, React, jxs, Estilos con Mantine.
+        *Se logro el proyecto en 4 dias.
       </Title>
     </div>
 
