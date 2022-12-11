@@ -1,4 +1,4 @@
-import { Table, Grid, Title, ScrollArea, Center, Header, Paper } from '@mantine/core';
+import { Table, Grid, Title, ScrollArea, Center, Header, Paper, Group } from '@mantine/core';
 import { useState, useEffect } from 'react';
 import ppr from './components/Preciosporrecamaras.png'
 import ppt from './components/publicacionesportiempo.png'
@@ -206,134 +206,148 @@ function App() {
         </Grid.Col>
       </Grid>
 
-
       <div>
-        <h3> Apartado de Analisis de Datos para All Property </h3>
+        <a id='Data'> Apartado de Analisis de Datos para All Property </a>
         <h6> Considero que es positivo para la empresa saber que rangos de precios se manejan en su pagina y a comparacion de otros
           sitios que tan frecuente se utiliza la plataforma.
         </h6>
       </div>
-      <Grid>
-        <Grid.Col span={3}>
-          <div>
-            <h3>
-              Rango de precios en base al numero de recamaras por propiedad.
-            </h3>
-            <img src={ppr} />
-          </div>
-        </Grid.Col>
-        <Grid.Col span={7}>
-          <Center>
-            <Table captionSide="top" horizontalSpacing="xl" striped highlightOnHover>
-              <ScrollArea style={{ height: 250 }} scrollbarSize={15}>
-                <thead>
-                  <tr>
-                    <th scope="col">Compra / Renta</th>
-                    <th scope="col">descripcion</th>
-                    <th scope="col">precio</th>
-                    <th scope="col">recamaras</th>
-                    <th scope="col">baños</th>
-                    <th scope="col">superficie</th>
-                    <th scope="col">ubicacion</th>
-                    <th scope="col">sitio</th>
+      <Title order={2} color='orange.4'>
+        Rango de precios en base al numero de recamaras por propiedad.
+      </Title>
+      <Group position="center">
+        <img src={ppr} />
+        <Center>
+          <Table captionSide="top" horizontalSpacing="xl" striped highlightOnHover>
+            <ScrollArea style={{ height: 250 }} scrollbarSize={15}>
+              <thead>
+                <tr>
+                  <th scope="col">Compra / Renta</th>
+                  <th scope="col">descripcion</th>
+                  <th scope="col">precio</th>
+                  <th scope="col">recamaras</th>
+                  <th scope="col">superficie</th>
+                  <th scope="col">ubicacion</th>
+                  <th scope="col">sitio</th>
+                </tr>
+              </thead>
+              <tbody>
+                {
+                  dataAllProperty.map((d) => (
+                    <tr key={d.compra_renta}>
+                      <td align="left">{d.compra_renta}</td>
+                      <td align="left" >{d.tipo}</td>
+                      <td align="left" >{d.precio}</td>
+                      <td align="left" >{d.recamaras}</td>
+                      <td align="left" >{d.superficie}</td>
+                      <td align="left" >{d.municipio}</td>
+                      <td align="left" >{d.sitio}</td>
+                    </tr>
+                  ))}
+              </tbody>
+            </ScrollArea>
+          </Table>
+
+        </Center>
+      </Group>
+      <Title order={2} color='orange.4'>
+        Numero de Publicaciones en los ultimos dias por Sitio.
+      </Title>
+      <Group>
+        <img src={ppt} />
+      </Group>
+      <Center>
+        <Table captionSide="top" horizontalSpacing="xl" striped highlightOnHover>
+          <ScrollArea style={{ height: 250 }} scrollbarSize={15}>
+            <thead>
+              <tr>
+                <th scope="col">Compra / Renta</th>
+                <th scope="col">descripcion</th>
+                <th scope="col">precio</th>
+                <th scope="col">recamaras</th>
+                <th scope="col">ubicacion</th>
+                <th scope="col">sitio</th>
+              </tr>
+            </thead>
+            <tbody>
+              {
+                dataLamudi.map((d) => (
+                  <tr key={d.compra_renta}>
+                    <td align="left">{d.compra_renta}</td>
+                    <td align="left" >{d.tipo}</td>
+                    <td align="left" >{d.precio}</td>
+                    <td align="left" >{d.recamaras}</td>
+                    <td align="left" >{d.municipio}</td>
+                    <td align="left" >{d.sitio}</td>
                   </tr>
-                </thead>
-                <tbody>
-                  {
-                    dataAllProperty.map((d) => (
-                      <tr key={d.compra_renta}>
-                        <td align="left">{d.compra_renta}</td>
-                        <td align="left" >{d.tipo}</td>
-                        <td align="left" >{d.precio}</td>
-                        <td align="left" >{d.recamaras}</td>
-                        <td align="left" >{d.superficie}</td>
-                        <td align="left" >{d.municipio}</td>
-                        <td align="left" >{d.sitio}</td>
-                      </tr>
-                    ))}
-                </tbody>
-              </ScrollArea>
-            </Table>
-
-          </Center>
-        </Grid.Col>
-        <Grid.Col span={6}>
-          <div>
-            <h3>
-              Numero de Publicaciones en los ultimos dias por Sitio.
-            </h3>
-            <img src={ppt} />
-          </div>
-        </Grid.Col>
-
-        <Grid.Col span={3}>
-          <Center>
-            <Table captionSide="top" horizontalSpacing="xl" striped highlightOnHover>
-              <ScrollArea style={{ height: 250 }} scrollbarSize={15}>
-                <thead>
-                  <tr>
-                    <th scope="col">Compra / Renta</th>
-                    <th scope="col">descripcion</th>
-                    <th scope="col">precio</th>
-                    <th scope="col">recamaras</th>
-                    <th scope="col">ubicacion</th>
-                    <th scope="col">sitio</th>
+                ))}
+            </tbody>
+          </ScrollArea>
+        </Table>
+      </Center>
+      <Center>
+        <Table captionSide="top" horizontalSpacing="xl" striped highlightOnHover>
+          <ScrollArea style={{ height: 250 }} scrollbarSize={15}>
+            <thead>
+              <tr>
+                <th scope="col">Compra / Renta</th>
+                <th scope="col">descripcion</th>
+                <th scope="col">precio</th>
+                <th scope="col">recamaras</th>
+                <th scope="col">ubicacion</th>
+                <th scope="col">sitio</th>
+              </tr>
+            </thead>
+            <tbody>
+              {
+                dataFlat.map((d) => (
+                  <tr key={d.compra_renta}>
+                    <td align="left">{d.compra_renta}</td>
+                    <td align="left" >{d.tipo}</td>
+                    <td align="left" >{d.precio}</td>
+                    <td align="left" >{d.recamaras}</td>
+                    <td align="left" >{d.municipio}</td>
+                    <td align="left" >{d.sitio}</td>
                   </tr>
-                </thead>
-                <tbody>
-                  {
-
-                    dataLamudi.map((d) => (
-                      <tr key={d.compra_renta}>
-                        <td align="left">{d.compra_renta}</td>
-                        <td align="left" >{d.tipo}</td>
-                        <td align="left" >{d.precio}</td>
-                        <td align="left" >{d.recamaras}</td>
-                        <td align="left" >{d.municipio}</td>
-                        <td align="left" >{d.sitio}</td>
-                      </tr>
-                    ))}
-                </tbody>
-              </ScrollArea>
-            </Table>
-
-          </Center>
-        </Grid.Col>
-
-        <Grid.Col span={3}>
-          <Center>
-            <Table captionSide="top" horizontalSpacing="xl" striped highlightOnHover>
-              <ScrollArea style={{ height: 250 }} scrollbarSize={15}>
-                <thead>
-                  <tr>
-                    <th scope="col">Compra / Renta</th>
-                    <th scope="col">descripcion</th>
-                    <th scope="col">precio</th>
-                    <th scope="col">recamaras</th>
-                    <th scope="col">ubicacion</th>
-                    <th scope="col">sitio</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {
-
-                    dataFlat.map((d) => (
-                      <tr key={d.compra_renta}>
-                        <td align="left">{d.compra_renta}</td>
-                        <td align="left" >{d.tipo}</td>
-                        <td align="left" >{d.precio}</td>
-                        <td align="left" >{d.recamaras}</td>
-                        <td align="left" >{d.municipio}</td>
-                        <td align="left" >{d.sitio}</td>
-                      </tr>
-                    ))}
-                </tbody>
-              </ScrollArea>
-            </Table>
-
-          </Center>
-        </Grid.Col>
-      </Grid>
+                ))}
+            </tbody>
+          </ScrollArea>
+        </Table>
+      </Center>
+      <Group>
+        <Group>
+          <img src={ppt} />
+        </Group>
+        <Center>
+          <Table captionSide="top" horizontalSpacing="xl" striped highlightOnHover>
+            <ScrollArea style={{ height: 250 }} scrollbarSize={15}>
+              <thead>
+                <tr>
+                  <th scope="col">Compra / Renta</th>
+                  <th scope="col">descripcion</th>
+                  <th scope="col">precio</th>
+                  <th scope="col">recamaras</th>
+                  <th scope="col">ubicacion</th>
+                  <th scope="col">sitio</th>
+                </tr>
+              </thead>
+              <tbody>
+                {
+                  dataFlat.map((d) => (
+                    <tr key={d.compra_renta}>
+                      <td align="left">{d.compra_renta}</td>
+                      <td align="left" >{d.tipo}</td>
+                      <td align="left" >{d.precio}</td>
+                      <td align="left" >{d.recamaras}</td>
+                      <td align="left" >{d.municipio}</td>
+                      <td align="left" >{d.sitio}</td>
+                    </tr>
+                  ))}
+              </tbody>
+            </ScrollArea>
+          </Table>
+        </Center>
+      </Group>
     </div>
 
   );

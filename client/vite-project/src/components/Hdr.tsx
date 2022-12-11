@@ -23,7 +23,7 @@ export function Heade() {
                 <Navbar className={classes.sticky} height={50}>
                     <img className={classes.img} src={ap} />
                     <Group position="right" spacing="xs">
-                        <a href="#User"><Title order={6} color='teal.3'> Data </Title> </a>
+                        <a href="#Data"><Title order={6} color='teal.3'> Data </Title> </a>
                         <a href="#User"><Title order={6} color='pink'> User </Title> </a>
                     </Group>
                 </Navbar>
