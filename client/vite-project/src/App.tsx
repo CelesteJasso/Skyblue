@@ -131,7 +131,7 @@ function App() {
         <Grid.Col span={7}>
           <br />
           <Table horizontalSpacing="sm" striped withBorder>
-            <Title order={3} align="left" color="orange.4">Nuestras propiedades en zona industrial</Title>
+            <Title order={3} align="left" color="orange.4">Nuestras propiedades en zona turistica</Title>
             <ScrollArea style={{ height: 200 }} scrollbarSize={30}>
               <thead>
                 <tr>
@@ -172,7 +172,7 @@ function App() {
         <Grid.Col span={7}>
           <br />
           <Table horizontalSpacing="sm" striped withBorder>
-            <Title order={3} align="left" color="orange.4">Nuestras propiedades en zona industrial</Title>
+            <Title order={3} align="left" color="orange.4">Nuestras propiedades en zona metropolitana</Title>
             <ScrollArea style={{ height: 200 }} scrollbarSize={30}>
               <thead>
                 <tr>
