@@ -124,22 +124,21 @@ function App() {
           </Table>
         </Grid.Col>
       </Grid>
-
       <Grid>
         <Grid.Col span={5}>
           <Turistica></Turistica>
         </Grid.Col>
-        <Grid.Col span={2}>
+        <Grid.Col span={7}>
+          <br />
           <Table horizontalSpacing="sm" striped withBorder>
-            <Title order={3} align="center" color="orange.4">Nuestras propiedades en esta zonas</Title>
-            <ScrollArea style={{ height: 250 }} scrollbarSize={15}>
+            <Title order={3} align="left" color="orange.4">Nuestras propiedades en zona industrial</Title>
+            <ScrollArea style={{ height: 200 }} scrollbarSize={30}>
               <thead>
                 <tr>
                   <th scope="col">Compra / Renta</th>
                   <th scope="col">descripcion</th>
                   <th scope="col">precio</th>
                   <th scope="col">recamaras</th>
-                  <th scope="col">baños</th>
                   <th scope="col">ubicacion</th>
                   <th scope="col">publicado</th>
                   <th scope="col">sitio</th>
@@ -147,13 +146,14 @@ function App() {
               </thead>
               <tbody>
                 {
+                  // dataVivanuncios para mostrar el main
+                  // postsVivanuncios para mostrar la appi que se esta ejecutando
                   responseTurismo.map((d) => (
                     <tr key={d.compra_renta}>
                       <td align="left">{d.compra_renta}</td>
                       <td align="left" >{d.tipo}</td>
                       <td align="left" >{d.precio}</td>
                       <td align="left" >{d.recamaras}</td>
-                      <td align="left" >{d.banios}</td>
                       <td align="left" >{d.municipio}</td>
                       <td align="left" >{d.publicado}</td>
                       <td align="left" >{d.sitio}</td>
@@ -169,17 +169,17 @@ function App() {
         <Grid.Col span={5}>
           <Metropolitana></Metropolitana>
         </Grid.Col>
-        <Grid.Col span={2}>
+        <Grid.Col span={7}>
+          <br />
           <Table horizontalSpacing="sm" striped withBorder>
-            <Title order={3} align="center">Nuestras propiedades en esta zonas</Title>
-            <ScrollArea style={{ height: 250 }} scrollbarSize={15}>
+            <Title order={3} align="left" color="orange.4">Nuestras propiedades en zona industrial</Title>
+            <ScrollArea style={{ height: 200 }} scrollbarSize={30}>
               <thead>
                 <tr>
                   <th scope="col">Compra / Renta</th>
                   <th scope="col">descripcion</th>
                   <th scope="col">precio</th>
                   <th scope="col">recamaras</th>
-                  <th scope="col">baños</th>
                   <th scope="col">ubicacion</th>
                   <th scope="col">publicado</th>
                   <th scope="col">sitio</th>
@@ -187,13 +187,14 @@ function App() {
               </thead>
               <tbody>
                 {
+                  // dataVivanuncios para mostrar el main
+                  // postsVivanuncios para mostrar la appi que se esta ejecutando
                   responseMetropol.map((d) => (
                     <tr key={d.compra_renta}>
                       <td align="left">{d.compra_renta}</td>
                       <td align="left" >{d.tipo}</td>
                       <td align="left" >{d.precio}</td>
                       <td align="left" >{d.recamaras}</td>
-                      <td align="left" >{d.banios}</td>
                       <td align="left" >{d.municipio}</td>
                       <td align="left" >{d.publicado}</td>
                       <td align="left" >{d.sitio}</td>
@@ -204,6 +205,7 @@ function App() {
           </Table>
         </Grid.Col>
       </Grid>
+
 
       <div>
         <h3> Apartado de Analisis de Datos para All Property </h3>
@@ -244,7 +246,6 @@ function App() {
                         <td align="left" >{d.tipo}</td>
                         <td align="left" >{d.precio}</td>
                         <td align="left" >{d.recamaras}</td>
-                        <td align="left" >{d.banios}</td>
                         <td align="left" >{d.superficie}</td>
                         <td align="left" >{d.municipio}</td>
                         <td align="left" >{d.sitio}</td>
@@ -275,7 +276,6 @@ function App() {
                     <th scope="col">descripcion</th>
                     <th scope="col">precio</th>
                     <th scope="col">recamaras</th>
-                    <th scope="col">baños</th>
                     <th scope="col">ubicacion</th>
                     <th scope="col">sitio</th>
                   </tr>
@@ -289,7 +289,6 @@ function App() {
                         <td align="left" >{d.tipo}</td>
                         <td align="left" >{d.precio}</td>
                         <td align="left" >{d.recamaras}</td>
-                        <td align="left" >{d.banios}</td>
                         <td align="left" >{d.municipio}</td>
                         <td align="left" >{d.sitio}</td>
                       </tr>
@@ -311,7 +310,6 @@ function App() {
                     <th scope="col">descripcion</th>
                     <th scope="col">precio</th>
                     <th scope="col">recamaras</th>
-                    <th scope="col">baños</th>
                     <th scope="col">ubicacion</th>
                     <th scope="col">sitio</th>
                   </tr>
@@ -325,7 +323,6 @@ function App() {
                         <td align="left" >{d.tipo}</td>
                         <td align="left" >{d.precio}</td>
                         <td align="left" >{d.recamaras}</td>
-                        <td align="left" >{d.banios}</td>
                         <td align="left" >{d.municipio}</td>
                         <td align="left" >{d.sitio}</td>
                       </tr>
@@ -335,7 +332,7 @@ function App() {
             </Table>
 
           </Center>
-        </Grid.Col> */}
+        </Grid.Col>
       </Grid>
     </div>
 
